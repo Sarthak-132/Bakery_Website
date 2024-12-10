@@ -28,3 +28,88 @@ body {
     height: 100%;
 }
 
+/* Header part */
+
+.logo-txt{
+    font-size: 1.5rem;
+    color: var(--orange-color);
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: var(--black-color);
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+.navlinks{
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.active, .navlinks:hover{
+    color: var(--orange-color);
+}
+
+.icons-link{
+    background: var(--orange-color);
+    width: 2.3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: .5rem;
+    display: inline-block;          /* increased size */
+    text-align: center;             /* centered horizontally */
+    line-height: 2.3rem;            /* centered vertically */
+    transition: .4s ease-in-out;    /* smooth transition */
+    cursor: pointer;
+}
+
+.icons-link:hover{
+    transform: translateY(-10%);
+}
+
+.fa-solid{
+    font-size: 1.1rem;
+    color: var(--white-color);
+}
+
+header{
+    height: 13vh;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.burger{
+    background: var(--black-color);
+    width: 1.6rem;
+    height: .20rem;
+    margin: .3rem;
+    border-radius: 2rem;
+}
