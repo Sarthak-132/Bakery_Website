@@ -23,7 +23,7 @@
 <body>
 
     <!-- Header part  -->
-    <header>
+    <header id="Home">
 
         <!-- Navigation bar -->
         <nav class="navbar container">
@@ -34,12 +34,12 @@
             </div>
 
             <ul class="navlist" id="nav-lists">
-                <li><a href="#" class="navlinks active">Home</a></li>
-                <li><a href="#" class="navlinks">About</a></li>
-                <li><a href="#" class="navlinks">Menu</a></li>
-                <li><a href="#" class="navlinks">Restaurant</a></li>
-                <li><a href="#" class="navlinks">Order</a></li>
-                <li><a href="#" class="navlinks">Contact</a></li>
+                <li><a href="#Home" class="navlinks active">Home</a></li>
+                <li><a href="#About" class="navlinks">About</a></li>
+                <li><a href="#Menu" class="navlinks">Menu</a></li>
+                <li><a href="#Restaurant" class="navlinks">Restaurant</a></li>
+                <li><a href="#Order" class="navlinks">Order</a></li>
+                <li><a href="#App" class="navlinks">App</a></li>
             </ul>
 
             <div class="nav-icons">
@@ -107,9 +107,37 @@
         </section>
 
 
+        <!-- About Section -->
+
+        <section class="rest-sections container" id="About">
+
+            <div class="row-container">
+                <div class="image-container">
+                    <img src="images/cupcake.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>
+                        About <br> Cake Bakery
+                    </h2>
+                    <p>
+                        offer a product of outstanding quality and ensure customer loyalty. The simplicity of that
+                        principle is backed up by a lot of hard work and years of experience.
+                    </p>
+                    <p>
+                        We also make Brownies & Macaroons, Donuts, Cupcakes with Icing & Mousse, Tea Time Slice Cakes &
+                        Muffins, Rolls & Sandwiches, Stuffed Buns, Pizza & Calzone, Quiche & Pies,
+                        Danish Pastry, Cookies.
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+        </section>
+
+
         <!-- Store Section -->
 
-        <section class="rest-sections container">
+        <section class="rest-sections container" id="Menu">
 
             <div class="column-container">
 
@@ -149,37 +177,11 @@
         </section>
 
 
-        <!-- About Section -->
-
-        <section class="rest-sections container">
-
-            <div class="row-container">
-                <div class="image-container">
-                    <img src="images/cupcake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h2>
-                        About <br> Cake Bakery
-                    </h2>
-                    <p>
-                        offer a product of outstanding quality and ensure customer loyalty. The simplicity of that
-                        principle is backed up by a lot of hard work and years of experience.
-                    </p>
-                    <p>
-                        We also make Brownies & Macaroons, Donuts, Cupcakes with Icing & Mousse, Tea Time Slice Cakes &
-                        Muffins, Rolls & Sandwiches, Stuffed Buns, Pizza & Calzone, Quiche & Pies,
-                        Danish Pastry, Cookies.
-                    </p>
-                    <button>Read More</button>
-                </div>
-            </div>
-
-        </section>
 
 
         <!-- Feature food Section -->
 
-        <section class="rest-sections container">
+        <section class="rest-sections container" id="Restaurant">
 
             <div class="column-container">
                 <h2>Our Featured Food </h2>
@@ -289,7 +291,7 @@
 
         <!-- Best food section -->
 
-        <section class="rest-section container">
+        <section class="rest-section container" id="Order">
 
             <div class="row-container">
 
@@ -322,7 +324,7 @@
 
         <!-- App Section -->
 
-        <section class="rest-section container">
+        <section class="rest-section container" id="App">
 
             <div class="row-container">
 
