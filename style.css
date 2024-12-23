@@ -23,6 +23,7 @@
     --pink-color: #FAE7E5;
     --mint-color: #DCFEF9;
     --bg-color: #ffe8e8;
+    --menu-color: #fdc4c4;
 
 }
 
@@ -34,6 +35,9 @@ body {
 }
 
 /* Header part */
+.logo {
+    z-index: 6;
+}
 
 .logo-txt {
     font-size: 1.5rem;
@@ -325,4 +329,50 @@ h4 {
     align-items: center;
     gap: 2rem;
     margin-top: 1rem;
+}
+
+
+/* media queries - responsiveness */
+
+@media screen and (max-width: 670px) {
+    .container {
+        width: 90%;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navlist {
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--menu-color);
+        height: 100vh;
+        width: 60%;
+        z-index: 5;
+        transform: translate(-100%);
+        transition: .5s ease-in-out;
+        /* transform: translate(0%); - show the navlist */
+    }
+
+    .navlist-active {
+        transform: translate(0%);
+    }
+
+
 }
